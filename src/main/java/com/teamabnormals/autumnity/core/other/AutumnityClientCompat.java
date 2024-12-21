@@ -41,7 +41,7 @@ public class AutumnityClientCompat {
 		BlockColors blockcolors = Minecraft.getInstance().getBlockColors();
 		ItemColors itemcolors = Minecraft.getInstance().getItemColors();
 
-		blockcolors.register((state, world, pos, tintIndex) -> 9352231, AutumnityBlocks.RED_MAPLE_LEAVES.get(), AutumnityBlocks.MAPLE_LEAF_PILE.get());
+		blockcolors.register((state, world, pos, tintIndex) -> 9352231, AutumnityBlocks.MAPLE_LEAVES.get(), AutumnityBlocks.MAPLE_LEAF_PILE.get());
 		blockcolors.register((state, world, pos, tintIndex) -> 10427697, AutumnityBlocks.RED_MAPLE_LEAVES.get(), AutumnityBlocks.RED_MAPLE_LEAF_PILE.get());
 		blockcolors.register((state, world, pos, tintIndex) -> 16743194, AutumnityBlocks.ORANGE_MAPLE_LEAVES.get(), AutumnityBlocks.ORANGE_MAPLE_LEAF_PILE.get());
 		blockcolors.register((state, world, pos, tintIndex) -> 16767334, AutumnityBlocks.YELLOW_MAPLE_LEAVES.get(), AutumnityBlocks.YELLOW_MAPLE_LEAF_PILE.get());
