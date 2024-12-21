@@ -40,13 +40,14 @@ public class AutumnityBiomes {
 		BiomeDefaultFeatures.addDefaultSoftDisks(generation);
 		BiomeDefaultFeatures.addDefaultFlowers(generation);
 		BiomeDefaultFeatures.addForestGrass(generation);
+		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_BIRCH_AND_OAK);
 		BiomeDefaultFeatures.addDefaultMushrooms(generation);
 		BiomeDefaultFeatures.addDefaultExtraVegetation(generation);
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.MAPLE_FOREST_VEGETATION);
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.FLOWER_MAPLE_FOREST);
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.FALLEN_LEAVES);
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.PATCH_FOUL_BERRY_BUSH);
-		return (new Biome.BiomeBuilder()).hasPrecipitation(true).temperature(0.7F).downfall(0.8F).specialEffects((new BiomeSpecialEffects.Builder()).waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(calculateSkyColor(0.7F)).foliageColorOverride(0x9FC944).grassColorOverride(0x9AB839).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).backgroundMusic(OverworldBiomes.NORMAL_MUSIC).build()).mobSpawnSettings(spawns.build()).generationSettings(generation.build()).build();
+		return (new Biome.BiomeBuilder()).hasPrecipitation(true).temperature(0.7F).downfall(0.8F).specialEffects((new BiomeSpecialEffects.Builder()).waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(calculateSkyColor(0.7F)).foliageColorOverride(12149815).grassColorOverride(15131453).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).backgroundMusic(OverworldBiomes.NORMAL_MUSIC).build()).mobSpawnSettings(spawns.build()).generationSettings(generation.build()).build();
 	}
 
 	private static Biome pumpkinFields(HolderGetter<PlacedFeature> features, HolderGetter<ConfiguredWorldCarver<?>> carvers) {
@@ -63,7 +64,7 @@ public class AutumnityBiomes {
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.FLOWER_PUMPKIN_FIELDS);
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.PATCH_TALL_GRASS_PUMPKIN_FIELDS);
 		generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AutumnityPlacedFeatures.PATCH_PUMPKIN_PUMPKIN_FIELDS);
-		return (new Biome.BiomeBuilder()).hasPrecipitation(true).temperature(0.8F).downfall(0.4F).specialEffects((new BiomeSpecialEffects.Builder()).waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(calculateSkyColor(0.8F)).foliageColorOverride(0x9FC944).grassColorOverride(0x9AB839).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).backgroundMusic(OverworldBiomes.NORMAL_MUSIC).build()).mobSpawnSettings(spawns.build()).generationSettings(generation.build()).build();
+		return (new Biome.BiomeBuilder()).hasPrecipitation(true).temperature(0.8F).downfall(0.4F).specialEffects((new BiomeSpecialEffects.Builder()).waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(calculateSkyColor(0.8F)).foliageColorOverride(12149815).grassColorOverride(12106808).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).backgroundMusic(OverworldBiomes.NORMAL_MUSIC).build()).mobSpawnSettings(spawns.build()).generationSettings(generation.build()).build();
 	}
 
 	private static MobSpawnSettings.Builder baseMapleSpawns() {
