@@ -42,9 +42,9 @@ public class AutumnityClientCompat {
 		ItemColors itemcolors = Minecraft.getInstance().getItemColors();
 
 		blockcolors.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(), AutumnityBlocks.MAPLE_LEAVES.get(), AutumnityBlocks.MAPLE_LEAF_PILE.get());
-		blockcolors.register((state, world, pos, tintIndex) -> 12665871, AutumnityBlocks.RED_MAPLE_LEAVES.get(), AutumnityBlocks.RED_MAPLE_LEAF_PILE.get());
-		blockcolors.register((state, world, pos, tintIndex) -> 16745768, AutumnityBlocks.ORANGE_MAPLE_LEAVES.get(), AutumnityBlocks.ORANGE_MAPLE_LEAF_PILE.get());
-		blockcolors.register((state, world, pos, tintIndex) -> 16760576, AutumnityBlocks.YELLOW_MAPLE_LEAVES.get(), AutumnityBlocks.YELLOW_MAPLE_LEAF_PILE.get());
+		blockcolors.register((state, world, pos, tintIndex) -> 10427697, AutumnityBlocks.RED_MAPLE_LEAVES.get(), AutumnityBlocks.RED_MAPLE_LEAF_PILE.get());
+		blockcolors.register((state, world, pos, tintIndex) -> 16743194, AutumnityBlocks.ORANGE_MAPLE_LEAVES.get(), AutumnityBlocks.ORANGE_MAPLE_LEAF_PILE.get());
+		blockcolors.register((state, world, pos, tintIndex) -> 16767334, AutumnityBlocks.YELLOW_MAPLE_LEAVES.get(), AutumnityBlocks.YELLOW_MAPLE_LEAF_PILE.get());
 
 		itemcolors.register((stack, tintIndex) -> {
 					BlockState blockstate = ((BlockItem) stack.getItem()).getBlock().defaultBlockState();
